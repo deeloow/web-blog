@@ -44,9 +44,8 @@ const remoteConfig = {
   rowId: window.__SUPABASE_CONFIG__?.rowId || DEFAULT_ROW_ID,
 };
 
-// Keep owner panel accessible even without query params so edit mode
-// does not disappear unexpectedly after URL changes.
-document.body.classList.add("owner-visible");
+// Owner mode is now controlled by the navbar button, not by default visibility
+// document.body.classList.add("owner-visible");
 
 const setEditableState = (enabled) => {
   editableElements.forEach((el) => {
@@ -331,7 +330,28 @@ if (ownerUnlockBtn) {
 if (ownerLockBtn) {
   ownerLockBtn.addEventListener("click", () => {
     setOwnerState(false);
+    closeOwnerPanel();
   });
+}
+
+// Owner mode panel toggle
+const ownerModeBtn = document.getElementById("ownerModeBtn");
+const ownerPanelBackdrop = document.getElementById("ownerPanelBackdrop");
+
+const toggleOwnerPanel = () => {
+  document.body.classList.toggle("owner-panel-open");
+};
+
+const closeOwnerPanel = () => {
+  document.body.classList.remove("owner-panel-open");
+};
+
+if (ownerModeBtn) {
+  ownerModeBtn.addEventListener("click", toggleOwnerPanel);
+}
+
+if (ownerPanelBackdrop) {
+  ownerPanelBackdrop.addEventListener("click", closeOwnerPanel);
 }
 
 const attachUploadControlToImage = (img) => {

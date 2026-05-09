@@ -154,6 +154,24 @@ a {
   display: none;
 }
 
+.owner-mode-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.owner-mode-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
 .hero {
   position: relative;
   min-height: 88vh;
@@ -361,16 +379,32 @@ body:not(.owner-unlocked) .edit-guide {
 
 .owner-panel {
   position: fixed;
-  right: 18px;
-  bottom: 72px;
-  z-index: 45;
-  width: min(240px, 92vw);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: min(320px, 92vw);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
   box-shadow: var(--shadow);
-  padding: 0.9rem;
+  padding: 1.5rem;
   display: none;
+}
+
+.owner-panel-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+
+body.owner-panel-open .owner-panel-backdrop {
+  display: block;
 }
 
 .owner-panel h3 {
@@ -403,13 +437,32 @@ body:not(.owner-unlocked) .edit-guide {
   color: var(--primary);
 }
 
-body.owner-visible .owner-panel {
+body.owner-panel-open .owner-panel {
   display: block;
+}
+
+body.owner-visible .owner-panel {
+  display: none;
+}
+
+body.dark .owner-panel-backdrop {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 body.dark .owner-panel {
   background: #182235;
   border-color: #2f4468;
+}
+
+body.dark .owner-mode-btn {
+  background: #1f2c44;
+  border-color: #365179;
+  color: #e6edf9;
+}
+
+body.dark .owner-mode-btn:hover {
+  border-color: #66abff;
+  color: #66abff;
 }
 
 body.dark .owner-panel p {

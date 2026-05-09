@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("LSDeleteThenInsertContactPresence",[],(function(t,n,r,o,a,i){function e(){var e=arguments,t=e[e.length-1],n=[],r=[];return t.sequence([function(n){return t.db.table(186).put({contactId:e[0],status:e[1],expirationTimestampMs:e[3],lastActiveTimestampMs:e[2],capabilities:e[4],publishId:e[5]})},function(e){return t.resolve(r)}])}e.__sproc_name__="LSPresenceDeleteThenInsertContactPresenceStoredProcedure",e.__tables__=["presence_states"],a.exports=e}),null);

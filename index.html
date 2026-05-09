@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern personal industrial tour travel blog in the Philippines." />
+  <title>My Industrial Tour Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="navbar container">
+      <a class="logo" href="#top"><i class="fa-solid fa-plane-departure"></i> Tour Diary</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container fade-up">
+      
+        <h1>My Industrial Tour Journey</h1>
+        <p class="subtitle">From flying to Manila to returning home in Zamboanga — a memorable educational adventure.</p>
+        <a href="#timeline" class="btn-primary">View My Journey</a>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="about">
+      <div class="section-heading">
+        <h2>About the Tour</h2>
+        <p>A short story of learning, travel, and unforgettable moments with classmates.</p>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <i class="fa-solid fa-plane"></i>
+          <h3>First Flight Experience</h3>
+          <p>Our educational journey began with the excitement of riding an airplane and heading to Manila.</p>
+        </article>
+        <article class="about-card">
+          <i class="fa-solid fa-building"></i>
+          <h3>Educational Visits</h3>
+          <p>We explored companies and establishments that gave us real-world insights.</p>
+        </article>
+        <article class="about-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>Classmate Bonding</h3>
+          <p>Beyond learning, we shared laughter, stories, and teamwork throughout every destination.</p>
+        </article>
+        <article class="about-card">
+          <i class="fa-solid fa-house"></i>
+          <h3>Back to Zamboanga</h3>
+          <p>We returned home with deeper knowledge, stronger friendships, and memories to cherish forever.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="edit-guide">
+      <div class="edit-guide">
+        <h2><i class="fa-solid fa-pen-to-square"></i> Quick Edit Guide</h2>
+        <p>You can easily modify images, dates, locations, captions, and daily descriptions.</p>
+        <ul>
+          <li><strong>Owner edit mode:</strong> Add <code>?owner=1</code> to your URL, then unlock with your passcode.</li>
+          <li><strong>Edit text directly:</strong> After unlocking, click any dashed text box and type your content.</li>
+          <li><strong>Upload photos:</strong> After unlocking, each image gets an <code>Upload</code> button for quick replacement.</li>
+          <li><strong>Add many photos:</strong> Use <code>Add More Photos</code> in each day card to insert multiple images at once.</li>
+          <li><strong>Privacy note:</strong> Upload/edit controls are hidden for normal viewers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-soft reveal" id="timeline">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Daily Journey Timeline</h2>
+          <p>Update each day manually with your photos, dates, locations, and reflections.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- DAY TEMPLATE: Replace text and image placeholders with your own content -->
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 1 • Manila</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Flight to Manila</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Manila Airport</p>
+              <div class="image-gallery">
+                <!-- Replace these placeholder images with your own photos -->
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="Plane and airport placeholder" />
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80" alt="City arrival placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 1 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 2 • Educational Visits</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Visits to Companies, Universities, or Establishments</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Metro Manila</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Office tour placeholder" />
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80" alt="University visit placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 2 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 3 • Educational Visits</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Visits to Companies, Universities, or Establishments</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Metro Manila</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Workshop activity placeholder" />
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80" alt="Classmates learning placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 3 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 4 • Educational Visits</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Visits to Companies, Universities, or Establishments</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Metro Manila</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Networking placeholder" />
+                <img src="https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&w=900&q=80" alt="Group photo placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 4 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 5 • Educational Visits</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Visits to Companies, Universities, or Establishments</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Metro Manila</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?auto=format&fit=crop&w=900&q=80" alt="Final visit placeholder" />
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80" alt="Seminar placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 5 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 6 • Tagaytay</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Visit to Tagaytay</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Tagaytay</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=900&q=80" alt="Tagaytay scenery placeholder" />
+                <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=900&q=80" alt="Food trip placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 6 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 7 • Baguio</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Going to Baguio</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Baguio City</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Roadtrip placeholder" />
+                <img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?auto=format&fit=crop&w=900&q=80" alt="Cold weather city placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 7 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 8 • Dormitory</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Back to the Dormitory</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Manila Dormitory</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80" alt="Dormitory placeholder" />
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Class reflection placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 8 photos here.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date editable" contenteditable="true">Day 9 • Zamboanga</div>
+            <div class="timeline-card">
+              <h3 class="editable" contenteditable="true">Flight from Manila to Zamboanga</h3>
+              <p class="meta editable" contenteditable="true"><i class="fa-regular fa-calendar"></i> Insert Date Here • <i class="fa-solid fa-location-pin"></i> Manila to Zamboanga</p>
+              <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=900&q=80" alt="Airport departure placeholder" />
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" alt="Homecoming placeholder" />
+              </div>
+              <p class="editable" contenteditable="true">Caption: Add your caption for Day 9 photos here.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="gallery">
+      <div class="section-heading">
+        <h2>Photo Gallery</h2>
+        <p>Grid-style memory board with hover effects and lightbox preview.</p>
+      </div>
+      <div class="masonry-gallery">
+        <!-- Replace image URLs with your own files (example: images/day1-photo1.jpg) -->
+        <img class="lightbox-item" src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?auto=format&fit=crop&w=900&q=80" alt="Travel memory 1" />
+        <img class="lightbox-item" src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=900&q=80" alt="Travel memory 2" />
+        <img class="lightbox-item" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80" alt="Travel memory 3" />
+        <img class="lightbox-item" src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=900&q=80" alt="Travel memory 4" />
+        <img class="lightbox-item" src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=900&q=80" alt="Travel memory 5" />
+        <img class="lightbox-item" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Travel memory 6" />
+      </div>
+    </section>
+
+    <section class="section section-soft reveal" id="highlights">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Tour Highlights</h2>
+          <p>Special moments I want to remember forever.</p>
+        </div>
+        <div class="highlights-grid">
+          <article class="highlight-card">
+            <h3><i class="fa-solid fa-star"></i> Favorite Moment</h3>
+            <p>Replace with your favorite memory from the entire tour.</p>
+          </article>
+          <article class="highlight-card">
+            <h3><i class="fa-solid fa-utensils"></i> Best Food</h3>
+            <p>Add the most delicious meal or food trip you had.</p>
+          </article>
+          <article class="highlight-card">
+            <h3><i class="fa-solid fa-camera-retro"></i> Most Memorable Experience</h3>
+            <p>Write about the one experience that stayed in your heart.</p>
+          </article>
+          <article class="highlight-card">
+            <h3><i class="fa-solid fa-lightbulb"></i> Biggest Lesson Learned</h3>
+            <p>Share the most important learning from your industrial tour.</p>
+          </article>
+          <article class="highlight-card">
+            <h3><i class="fa-solid fa-face-laugh-beam"></i> Funniest Moment</h3>
+            <p>Include your funniest story with classmates or instructors.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="reflection">
+      <div class="section-heading">
+        <h2>Personal Reflection</h2>
+        <p>Your space to share growth, gratitude, and life lessons.</p>
+      </div>
+      <div class="reflection-box">
+        <!-- Replace this paragraph with your own full reflection -->
+        <p>
+          This industrial tour taught me that learning can happen everywhere - in classrooms, offices, airports,
+          buses, and even during simple conversations. The experience helped me become more confident, independent,
+          and open-minded. Most importantly, it deepened my friendship with classmates and gave me beautiful memories
+          that I will always carry, from Manila to Zamboanga.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p>Made with memories from our Industrial Tour.</p>
+      <small>&copy; <span id="year"></span> My Industrial Tour Journey. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img id="lightboxImage" src="" alt="Preview image" />
+  </div>
+
+  <aside class="owner-panel" id="ownerPanel" aria-live="polite">
+    <h3><i class="fa-solid fa-user-lock"></i> Owner Mode</h3>
+    <p id="ownerStatus">Locked</p>
+    <button id="ownerUnlockBtn" type="button">Unlock Editor</button>
+    <button id="ownerLockBtn" type="button">Lock</button>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    window.__SUPABASE_CONFIG__ = {
+      url: "https://rfltgmlkpvdlecmnarsl.supabase.co",
+      anonKey: "sb_publishable_WBygb7cZuRXYQ2JN1psEeA_nf6wOyna",
+      bucket: "tour-files",
+      table: "site_content",
+      rowId: "main"
+    };
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
